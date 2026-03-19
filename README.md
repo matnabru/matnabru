@@ -1,40 +1,45 @@
-# Urbi Labs // Mateusz Urbanek
+# Matnabru // Mateusz Urbanek
 
-Building, breaking, and benchmarking systems. By day, I build AI-native apps; by night, I’m digging into the plumbing that makes distributed systems actually stay up. 
+Fullstack engineer specializing in AI-native systems and high-performance architectures. I build things that have to stay up — event-driven pipelines, low-latency data layers, and the occasional C++ simulation engine at midnight.
 
-**Urbi Labs** is my personal scratchpad for the stuff that doesn't make it into a Jira ticket: raw benchmarks, failed experiments, and "un-vibecoded" implementations.
+I just like building things. Finance trackers, game engines, hardware experiments, self-hosted infrastructure — the domain doesn't matter much as long as the problem is interesting.
+
+**Matnabru** is my personal scratchpad: the stuff that doesn't make it into a Jira ticket.
 
 ---
 
 ### 💼 The Day Job
-* **Orange Polska** // Fullstack Engineer — Scaling internal platforms, AI integrations, and cross-platform native apps.
-* **Aexol** // Backend Developer — 3 years of deep-diving into API architecture, microservices, and system logic.
+
+* **Orange Polska** // Fullstack Engineer, AI Engineering & Automation — Building web/mobile apps and microservices that integrate AI orchestration, STT/TTS pipelines, and enterprise APIs (Microsoft 365, OAuth 2.0) into production-grade internal tooling.
+* **Aexol** // Software Engineer — Outsourced across multiple client projects (3–5 months each), building and expanding products across different domains and stacks. Highlights: eliminated Stripe rate-limit bottlenecks via event-driven sync (Webhooks + MongoDB), increasing read throughput 200×; contributed to bare-metal K8s migration (Hetzner), significantly reducing infrastructure OPEX.
 * **Deloitte** // Salesforce Intern — Where the first commit happened (2021).
 
-### 🧪 What I'm poking at
-* **Distributed State:** Building and breaking load balancers, proxies, and consensus logic.
-* **Performance:** Moving from "it works" to "it's efficient"—optimizing Node.js event loops and Python execution.
-* **Real-time Systems:** Exploring high-concurrency event streams and low-latency data. This includes everything from betting bots and strategy analyzers to AI-based FPS aim assist integrated with hardware.
-
 ### 🛠 The Stack
-* **Primary:** TypeScript (Node.js/Next.js), Python (AI/Automation)
-* **Mobile:** React Native
-* **Data:** Postgres/Mongo for the truth, Redis for the speed.
-* **Infra:** Docker/Kubernetes, Linux internals, and a lot of `curl` commands.
+
+* **Primary:** TypeScript (Node.js/Next.js/NestJS), Python (AI/Automation/Lazy side projects), C++ (low-level, heavily optimized systems).
+* **Infrastructure:** Kubernetes, Docker, GCP/AWS (Serverless & Event-driven), Linux Internals.
+* **Data & AI:** Postgres/Mongo/Firebase for the truth, Redis/Valkey for the speed, RAG pipelines, Vector DBs, GraphQL/Swagger for the interface.
 
 ---
 
 ### 📂 Projects
 
-* **[overlord-ecs] // Multithreaded Simulation Engine** Work in progress custom game engine written in **Rust** designed for massive 2D colony sims. Built on a server-client architecture to support long progression with PoE-style RNG loot systems. Leveraging **Data-Parallel ECS** to handle thousands of entities across all CPU cores.
+#### 🎮 [10,000 Spirits](https://github.com/matnabru/immortal-architect) // Simulation Engine
+A xianxia RPG built on a custom C++ GDExtension simulation layer inside Godot 4.
+* **Architecture:** Three-tier stack — C++ GDExtension → C# game systems → Godot multimesh rendering.
+* **Performance:** Data-parallel ECS simulating 10,000+ active entities in real time.
+* **Tooling:** In-engine WorldCreator with a command palette UI. All world content authored from within the game.
 
-* **[asset-tracker](https://github.com/urbilabs/asset-tracker) // Real-time Data Pipes** A cross-market ingestion engine focused on the architectural challenge of normalizing high-frequency WebSockets (Stocks/Crypto) and asynchronous API state (Banking) into a unified query layer.
+#### 📈 [Asset-Tracker](https://github.com/matnabru/asset-tracker) // Real-time Wealth Engine
+Data ingestion engine for unified portfolio state across fragmented financial markets.
+* **Integrations:** Interactive Brokers (Stocks/Options), PKO BP (Open Banking/PSD2), Binance/Bybit (WebSockets).
+* **Challenge:** Merging high-frequency WebSocket streams with asynchronous, rate-limited Banking APIs into a single low-latency query layer.
+* **Stack:** Node.js, TypeScript, Redis, MongoDB.
 
-* **[urbilabs-platform](https://github.com/urbilabs/urbilabs-platform)** A custom-built engine (Next.js) to host my deep-dives into system design, infra, and whatever I learned the hard way this week.
+#### 🌐 [BetBros](https://github.com/matnabru/betbros-betting-bot) // Discord Betting Bot
+Built in a day for live football watch parties with friends. Scrapes today's fixtures via proxy rotation, pulls live event odds from a dedicated API, and tracks user predictions and scores in MongoDB.
 
 ---
 
 ### 🔗 Connect
-[UrbiLabs.io](https://urbilabs.io) • [LinkedIn](https://www.linkedin.com/in/mateusz-urbanek-427559201)
-
-> *"I don't understand what I cannot build." — Richard Feynman*
+[mateuszurbanek.com](https://mateuszurbanek.com) • [LinkedIn](https://www.linkedin.com/in/mateusz-urbanek-427559201)
