@@ -32,12 +32,14 @@ A Google ADK + A2A-powered LeetCode learning system that routes between cached k
 
 #### 🏢 [Pale Office](https://github.com/matnabru/immortal-architect) // Automation Tower Defense
 A darkly comic factory builder / tower defense game about a burned-out grim reaper managing a bureaucratic afterlife skyscraper.
+Private repo — code walkthrough available on request.
 * **Architecture:** Three-tier game stack — C++ GDExtension simulation layer → C# gameplay systems → Godot rendering and tools.
 * **Systems:** Vertical floor-by-floor factory building, drafted soul-wave defense, workforce recruitment from defeated enemies, and persistent office infrastructure across failed runs.
 * **Tooling:** In-engine worldbuilding and simulation tooling designed to author large, highly systemic game spaces from inside the game itself.
 
 #### 📈 [Asset-Tracker](https://github.com/matnabru/asset-tracker) // Real-time Wealth Engine
 Data ingestion engine for unified portfolio state across fragmented financial markets.
+Private repo — code walkthrough available on request.
 * **Integrations:** Interactive Brokers (Stocks/Options), PKO BP (Open Banking/PSD2), Binance/Bybit (WebSockets).
 * **Challenge:** Merging high-frequency WebSocket streams with asynchronous, rate-limited Banking APIs into a single low-latency query layer.
 * **Stack:** Node.js, TypeScript, Redis, MongoDB.
