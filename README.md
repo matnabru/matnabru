@@ -1,8 +1,8 @@
 # Matnabru // Mateusz Urbanek
 
-Fullstack engineer specializing in AI-native systems and high-performance architectures. I build things that have to stay up — event-driven pipelines, low-latency data layers, and the occasional C++ simulation engine at midnight.
+Fullstack engineer specializing in AI-native systems, multi-agent workflows, and high-performance architectures. I build things that have to stay up: event-driven pipelines, low-latency data layers, developer tooling, and the occasional C++ simulation engine at midnight.
 
-I just like building things. Finance trackers, game engines, hardware experiments, self-hosted infrastructure — the domain doesn't matter much as long as the problem is interesting.
+I like building systems where orchestration, state, and performance actually matter. Finance trackers, game engines, self-hosted infrastructure, weird automation projects — the domain changes, the fun part doesn't.
 
 **Matnabru** is my personal scratchpad: the stuff that doesn't make it into a Jira ticket.
 
@@ -24,11 +24,17 @@ I just like building things. Finance trackers, game engines, hardware experiment
 
 ### 📂 Projects
 
-#### 🎮 [10,000 Spirits](https://github.com/matnabru/immortal-architect) // Simulation Engine
-A xianxia RPG built on a custom C++ GDExtension simulation layer inside Godot 4.
-* **Architecture:** Three-tier stack — C++ GDExtension → C# game systems → Godot multimesh rendering.
-* **Performance:** Data-parallel ECS simulating 10,000+ active entities in real time.
-* **Tooling:** In-engine WorldCreator with a command palette UI. All world content authored from within the game.
+#### 🌍 [LeetCode World](https://github.com/matnabru/leetcode-world) // Multi-Agent Learning System
+A Google ADK + A2A-powered LeetCode learning system that routes between cached knowledge, similarity search, explanation, and fresh multi-agent solving workflows.
+* **Architecture:** Hybrid policy layer over a deterministic `Parser → Architect → Coder → Librarian` execution path.
+* **State:** Persists solved problems, pattern notes, and similarity links into an Obsidian-backed knowledge base with ChromaDB.
+* **Tooling:** Distributed A2A services, inspectable Agent Cards, ADK Web observability, and a clean dev workflow for tracing multi-agent runs.
+
+#### 🏢 [Pale Office](https://github.com/matnabru/immortal-architect) // Automation Tower Defense
+A darkly comic factory builder / tower defense game about a burned-out grim reaper managing a bureaucratic afterlife skyscraper.
+* **Architecture:** Three-tier game stack — C++ GDExtension simulation layer → C# gameplay systems → Godot rendering and tools.
+* **Systems:** Vertical floor-by-floor factory building, drafted soul-wave defense, workforce recruitment from defeated enemies, and persistent office infrastructure across failed runs.
+* **Tooling:** In-engine worldbuilding and simulation tooling designed to author large, highly systemic game spaces from inside the game itself.
 
 #### 📈 [Asset-Tracker](https://github.com/matnabru/asset-tracker) // Real-time Wealth Engine
 Data ingestion engine for unified portfolio state across fragmented financial markets.
